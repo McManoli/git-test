@@ -1,0 +1,95 @@
+body {
+  font-family: Helvetica;
+}
+
+h2 {
+  font-weight: lighter;
+  text-align: center;
+}
+
+
+/* Animation Cycles */
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#loader-circle img {
+  display: block;
+  margin: auto;
+}
+
+#loader-circle img:hover {
+  animation-name: rotate;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+
+/* Color Transparency */
+
+#color-transparency p {
+  height: 50px;
+  width: 400px;
+  margin: auto;
+  font-weight: lighter;
+}
+
+#color-transparency p:nth-child(1) {
+  background-color: rgba(255,0,0,0.5);
+  position: relative;
+  top: 30px;
+  left: 50px;
+}
+
+#color-transparency p:nth-child(2) {
+  background-color: rgba(0,0,255,0.5);
+}
+
+
+/* Opacity */
+
+#element-opacity p {
+  height: 50px;
+  width: 400px;
+  margin: auto;
+  font-weight: lighter;
+}
+
+#element-opacity p:nth-child(1) {
+  background-color: red;
+  opacity: 0.5;
+  position: relative;
+  top: 30px;
+  left: 50px;
+}
+
+#element-opacity p:nth-child(2) {
+  background-color: blue;
+  opacity: 0.5;
+}
+
+#hvr-trans {
+  width: 400px;
+  margin: auto;
+  background-color: black;
+  opacity: 0.9;
+}
+
+#hvr-trans p {
+  font-weight: lighter;
+  color: white;
+  text-align: center;
+  line-height: 2em;
+  transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+#hvr-trans p:hover {
+  opacity: 0.65;
+}
