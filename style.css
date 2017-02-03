@@ -87,9 +87,10 @@ h2 {
   color: white;
   text-align: center;
   line-height: 2em;
-  transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  /* transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1); */
 }
 
 #hvr-trans p:hover {
-  opacity: 0.65;
+  /* opacity: 0.65; */
+  transition: opacity 0.2s 0.65;
 }
